@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Ubuntu:wght@300;400;700&display=swap');
+/* font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 1.125rem;
+    font-family:'Ubuntu', sans-serif; 
+    font-weight: 300;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+/* Header Section */
+header{
+    background-color: #f8f8f8;
+    padding: 1.5em 0;
+}
+    
+
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.motto{
+    color: #1792d2;
+    font-size: .75rem;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: .175em;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .7em 0;
+    color: #707070;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    letter-spacing: .175em;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #1792d2;
+    
+}
+
+.current-page{
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+
+
+.container-bottom{
+    margin-top: 2em;
+}
+
+
+.article-title{
+    font-family: 'Lora', serif; 
+    font-size: 1.5rem;
+    color: #143774;
+    font-weight: 400;
+    margin-bottom: .75em;
+}
+
+.article-info{
+    font-size: 0.875rem;
+    margin: 1em 0;
+}
+
+.article-body{
+    padding-bottom: 1em;
+    line-height: 1.5;
+}
+
+.article-body-strong{
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.article-body a{
+    color: #1792D2;
+}
+
+.article-body a:hover,
+.article-body a:focus{
+    color: #143774;
+}
+
+.article-feature{
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* Why i am setting order is to make it display visually as in the design,
+   but in my index it is arrange properly because of screen reader*/
+   .article-feature{
+    display: flex;
+    flex-direction: column;
+   }
+
+   /* order */
+   .article-feature-img{
+    order: -2;
+   }
+
+   .article-info{
+    order: -1;
+   }
+
+   .read-more{
+    font-size: .875rem;
+    color: #1792d2;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: .175em;
+}
+
+.read-more:hover,
+.read-more:focus{
+    color: #143774;
+    text-decoration: underline;
+}
+
+.article-recent{
+    margin-bottom: 2.5em;
+/* Why i am setting order is to make it display visually as in the design,
+   but in my index it is arrange properly because of screen reader*/
+
+   display: flex;
+   flex-direction: column;
+}
+
+.article-recent-text{
+    order: 2;
+}
+
+.article-recent-img{
+    order: 1;
+}
+
+.sidebar-widget-title{
+    color: #143774;
+    font-family:'Lora', serif; 
+    font-weight: 700;
+    letter-spacing: .175em;
+    padding-bottom: .5em;
+}
+
+.sidebar-widget-body{
+    line-height: 1.5;
+    padding: .5em 0;
+}
+
+.sidebar-widget{
+    border: 20px solid #EBEBEB;
+    padding: 1em;
+    margin-bottom: 2em;
+    
+}
+/* Why i am setting order is to make it display visually as in the design,
+   but in my index it is arrange properly because of screen reader*/
+.sidebar-widget-recent-post{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+
+}
+
+.side-widget-img {
+    order: -1;
+}
+
+.sidebar-widget-recent-post:last-child{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sidebar-widget-recent-title{
+    font-family: 'Lora', serif; 
+    font-size: 1.5rem;
+    color: #143774;
+    font-weight: 400;
+    padding-top: 0.5em;
+}
+
+footer{
+    background-color: #143774;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.footer-container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.copyright-text{
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.copyright-year{
+    color: #FFFFFF;
+    font-weight: 300;
+    opacity: 54%;
+}
+
+/* For About me page */
+
+.about-me-img{
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-title{
+    margin-top: 1em;
+}
+
+.how-things-turn-title,
+.now-simple-life-title{
+    color: #1792D2;
+    font-size: 1.3125rem;
+    margin-bottom: .75em;
+}
+
+
+@media screen and (min-width:675px) {
+
+    .container-nav{
+        flex-direction: row;
+    }
+
+    .motto{
+        text-align: left;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    nav a{
+        margin-left: 2em;
+    }
+
+    .container-main{
+        display: flex;
+        justify-content: space-between;
+        }
+
+        main{
+            width: 70%;
+        }
+        
+        aside{
+            width: 25%;
+            min-width: 200px;
+            margin-left: 1em;
+        }
+
+        .article-recent{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .article-recent-text{
+            width: 68%;
+        }
+
+        .article-recent-img{
+            width: 30%;
+        }
+
+        .article-img{
+            width: 100%;
+            min-height: 250px;
+            object-fit: cover;
+        }
+
+}
